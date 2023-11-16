@@ -2,6 +2,12 @@ package ru.job4j;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        short age;
+        char gender;
+        float height;
+        int countBricks;
+        double countBacteria;
+        boolean workPermission;
+        long size;
     }
 }
