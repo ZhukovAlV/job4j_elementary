@@ -17,7 +17,6 @@ class X2Test {
         assertEquals(expected, rsl);
     }
 
-
     @Test
     public void whenA1B1C1X1Then3() {
         int a = 1;
@@ -28,7 +27,6 @@ class X2Test {
         int rsl = X2.calc(a, b, c, x);
         assertEquals(expected, rsl);
     }
-
 
     @Test
     public void whenA0B1C1X1Then2() {
