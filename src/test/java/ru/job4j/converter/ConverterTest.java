@@ -17,10 +17,19 @@ class ConverterTest {
     }
 
     @Test
-    void whenConvert200RblThen3dot3333Euro() {
-        float in = 140;
-        float expected = 2;
+    void whenConvert200RblThen2dot8571Euro() {
+        float in = 200;
+        float expected = 2.8571f;
         float out = Converter.rubleToEuro(in);
+        float eps = 0.0001f;
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
+    }
+
+    @Test
+    public void whenConvert60RubleThen1Dlr() {
+        float in = 60;
+        float expected = 1;
+        float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
