@@ -8,17 +8,9 @@ public class SqArea {
     }
 
     public static double square(double p, double k) {
-        double h = height(p, k);
-        double l = length(p, h);
+        double h = p / (2 * (k + 1));
+        double l = h * k;
         return l * h;
-    }
-
-    public static double height(double p, double k) {
-        return p / (2 * (k + 1));
-    }
-
-    public static double length(double h, double k) {
-        return h * k;
     }
 
 }
